@@ -1,0 +1,20 @@
+[
+    {
+      "title": "titulo1",
+      "description": "descripcion1",
+      "price": 600,
+      "thumbnail": "/path/to/image1.jpg",
+      "code": "ABC123",
+      "stock": 10,
+      "id": 1
+    },
+    {
+      "title": "titulo2",
+      "description": "descripcion2",
+      "price": 610,
+      "thumbnail": "/path/to/image2.jpg",
+      "code": "ABC124",
+      "stock": 15,
+      "id": 2
+    }
+  ]

@@ -1,4 +1,4 @@
-const fs = require('fs');
+import * as fs from 'fs';
 
 class ProductManager {
     constructor(path) {
@@ -111,37 +111,4 @@ class ProductManager {
     }
 }
 
-const product1 = {
-    title: 'titulo1',
-    description: 'descripcion1',
-    price: 600,
-    thumbnail: '/path/to/image1.jpg',
-    code: 'ABC123',
-    stock: 10
-};
-const product2 = {
-    title: 'titulo2',
-    description: 'descripcion2',
-    price: 610,
-    thumbnail: '/path/to/image2.jpg',
-    code: 'ABC124',
-    stock: 15
-};
-
-const manager = new ProductManager('./data/products.json');
-
-async function test () {
-    console.log(await manager.addProduct(product1));
-    console.log(await manager.addProduct(product2));
-    console.log(await manager.getProducts());
-    console.log(await manager.getProductById(1));
-    console.log(await manager.updateProduct(2,
-        {
-            stock: 10,
-            price: 666
-        }
-    ));
-    console.log(await manager.deleteProductById(1));
-}
-
-test();
+export default ProductManager;
